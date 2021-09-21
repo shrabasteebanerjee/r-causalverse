@@ -3,7 +3,7 @@ LABEL maintainer="Shrabastee Banerjee <shrabastee.b@gmail.com>"
 
 # Install other libraries
 RUN install2.r --error \
-        hdm grf broom cem stargazer xtable quantreg caret DescTools gbm car doParallel multcomp cowplot
+        hdm grf broom cem stargazer xtable quantreg caret DescTools gbm car doParallel multcomp cowplot fixest Rcpp gtsummary usethis
 RUN install2.r --error --repo https://cran.microsoft.com/snapshot/2020-12-04/ \
         lfe
 RUN mkdir /home/rstudio/data \
