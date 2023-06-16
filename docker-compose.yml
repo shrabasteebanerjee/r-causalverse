@@ -9,10 +9,10 @@ services:
       - 8787:8787
     volumes:
       - type: bind
-        source: ~/data/
+        source: /home/ec2-user/covid-19-book-consumption
         target: /home/rstudio/data
     environment:
-      - PASSWORD=<SUPER SUPER SECRET>
+      - PASSWORD=goodreads
       - TZ=America/New_York
     tty: true
     restart: always
