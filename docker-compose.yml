@@ -12,7 +12,7 @@ services:
         source: /home/ec2-user/covid-19-book-consumption
         target: /home/rstudio/data
     environment:
-      - PASSWORD=goodreads
+      - PASSWORD=SECRET
       - TZ=America/New_York
     tty: true
     restart: always
